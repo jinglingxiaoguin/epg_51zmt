@@ -4,16 +4,15 @@
 <head>
     
 <meta charset="utf-8">
-<link rel="icon" type="image/x-icon" href="https://res.mxdyeah.top/favicon.ico">
+<link rel="icon" type="image/x-icon" href="https://cdn2.iconfinder.com/data/icons/screen-interactions/80/EPG-IPG-interactive-Electronic-programGuides-512.png">
 <meta name="msvalidate.01" content="FA1512DCB7775B210429A98C20AC95AF" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=yes" />
 <meta name="description" content="免费EPG节目清单,IPTV">
 <meta name="keywords" content="IPTV,epg,m3u8,live,cctv,地方台,直播">
-<meta name="author" content="mxdyeah">
-<title>mxd's EPG - Powered by mxd</title>
+<title>swh123's EPG - Powered by swh123</title>
 
 <!-- 本站请求 -->
-<link rel="stylesheet" href="{% static "/css/bootstrap/4.3.1/bootstrap.min.css" %}" crossorigin="anonymous">
+<!-- <link rel="stylesheet" href="{% static "/css/bootstrap/4.3.1/bootstrap.min.css" %}" crossorigin="anonymous"> -->
 <script src="{% static "/js/jquery/2.1.1/jquery-2.1.1.min.js" %}" crossorigin="anonymous"></script>
 <script src="{% static "/js/jquery.lazyload.min.js" %}"></script>
 <script src="{% static "/js/popper/1.14.7/popper.min.js" %}"  crossorigin="anonymous"></script>
@@ -36,49 +35,20 @@
 <body>
 <div class="container bg-light">
     <br />
-    <h1>mxd's EPG</h1>
+    <h1>SWH123's EPG</h1>
     <br />
-    <div style="text-align: justify;">
-        <img src="https://res.mxdyeah.top/picture.jsp/money.jpg" style="height:320px; width:320px;float: right; clear: both;" alt="mxd赞赏码" title="mxd赞赏码">
-    </div>
-    <div style="text-wrap: wrap;">
-        <div class="fontsize18px"><strong>当前EPG服务器版本:V2.2beta，Github上有我们的最新版本，请各位保持更新最新版本！</strong></div>
-        <div class="fontsize22px">开源Github:<a href="https://github.com/mxdabc/epg/" target="_blank">&NonBreakingSpace;Github地址，请给我们点个Star！</a>
-            <br />DIYP影音无法使用请检查TXT里面的频道名称是否与下表的tvg-name一一对应。<br />
-            <a href="./banip/">IP封禁名单</a><br />
-            ✨本站开启CC防护:<font style="color:red;">60</font>秒内,请求同一URI累计超过<font style="color:red;">60</font>次,封锁IP<font style="color:red;">60</font>秒,请各位合理使用!
-            <!--因域名备案原因，现迁移域名至https://epg.mxdyeah.top/,老域名https://epg.imxd.top/将在2024-05-01停用！-->
-        </div>
-    </div>
-    <button onclick="toggleContent()">点击显示/收起详细内容</button>
-    <div id="content" class="hidden">
+    <div id="content">
         <p>
-            <h3>搭配方案看这里！↓   👇</h3>
-            <h3><a href="https://blog.mxdyeah.top/mxdyeah_blog_post/44.html" target="_blank">EPG+CQYX 最完美搭配方法（CCTV+地方台全部包含）</a></h3><br>
-            <h6>参考:<a href="https://github.com/supzhang/epg" target="_blank">老张的EPG</a></h6>
-            <h5>使用前请阅读：<a href="https://blog.mxdyeah.top/mxdyeah_blog_post/43.html" target="_blank">使用说明</a></h5>
-            <h5>请扫右边二维码赞助我们！否则我们可能停服！</h5>
-            <h5>我们提供DIYP接口！DIYP接口<code>https://epg.imxd.top/api/diyp/</code><br>使用DIYP需要提供参数，例如：<code>?ch=CCTV1&date=20230309</code></h5>
-            <h3>请珍惜服务器！不要恶意攻击！<br>赞助我们是我们前进的动力！</h3>
-            <h5><strong>Tips:</strong></h5>
-            <h5>我本人是一位中学生，正在努力进步，有问题联系我我也只能周末回复。抱歉！<br><a href="mailto:me@imxd.top">me#imxd.top(点击此处发邮件,#换@)</a></h5>
-            <h6>海南卫视原名旅游卫视，所以二者是一个东西，我们采用海南卫视新台标。</h6>
-            <h6>如果您发现EPG错误，或者导入不了等状况，请单击这里发帖反馈→&NonBreakingSpace;<a href="https://discuz.mxdyeah.top/mxdyeah_discuz_thread-63-1-1.html" target="_blank">发帖反馈区</a></h6>
-            <h6><strong>记住我们的地址在域名后面还有一个<code>download</code>，比如<code>https://epg.imxd.top/download/all-mxdyeah.xml</code></strong></h6>
-            <h6><strong>我们的域名支持https这样的SSL加密，建议各位通过<code>https://epg.imxd.top/</code>访问（http不受影响）</strong></h6>
+            <!-- <h5>DIYP接口<code>https://epg.swh123.xyz:5001/api/diyp?ch=CCTV1&date=20240609</code></h5> -->
             <p style="text-wrap: wrap;">
-            <span style="font-size: 18px;"><strong>我们与<a href="http://epg.51zmt.top:8000/" style="text-wrap: wrap;" target="_blank">老张的EPG Since 2019 (51zmt.top)</a>的区别如下，各位需要用直接用下面的链接：</strong></span>
+                <span style="font-size: 18px;"><strong>DIYP接口：</strong></span><a href="https://epg.swh123.xyz:5001/api/diyp?ch=CCTV1&date=20240609" style="font-size: 18px;"><strong>https://epg.swh123.xyz:5001/api/diyp?ch=CCTV1&date=20240609</strong></a>
             </p>
             <p style="text-wrap: wrap;">
                 <span style="font-size: 18px;"><strong>节目表下载地址：</strong></span><a href="./download/all-mxdyeah.xml" style="font-size: 18px;"><strong>all-mxdyeah.xml</strong></a>
             </p>
             <p style="text-wrap: wrap;">
-                <span style="font-size: 18px;"><strong>下载测试m3u文件(地址为空，仅供研究使用):</strong></span><a href="./download/test.m3u" style="font-size: 18px;"><strong>测试m3u</strong></a>
+                <span style="font-size: 18px;"><strong>测试m3u下载:</strong></span><a href="./download/test.m3u" style="font-size: 18px;"><strong>测试m3u</strong></a>
             </p>
-            <p style="text-wrap: wrap;">
-                <span style="font-size: 18px;"><strong>搭配节目表最佳m3u文件:</strong></span><a href="https://live.imxd.top/epg.m3u8" style="font-size: 18px;"><strong>&NonBreakingSpace;https://live.imxd.top/epg.m3u[ 基于cqyx，因为我在重庆 :) ]</strong></a>
-            </p>
-            <p><em>上面的cqyx用不了的话，还是自己下载测试m3u自己修改吧！反正重庆、四川、河南亲测可用</em></p>
             <p style="text-wrap: wrap;">
                 <span style="font-size: 18px;"><strong>央视及各省卫视EPG列表：</strong></span><a href="./download/cc-mxdyeah.xml" style="font-size: 18px; text-decoration: underline;"><span style="font-size: 18px;"><strong>cc-mxdyeah.xml</strong></span></a>
             </p>
@@ -131,10 +101,8 @@
   <footer>
     <hr>
         <div id="mxdyeah_diy" class="mxd_diy_footer mxd_diy_footer_zoom">
-            mxd's EPG by&nbsp;<a href="https://www.mxdyeah.top/" target="_blank">mxd & mxd Team.</a>
-            <br>Built by <strong>mxd</strong> On Server: <em>Debian 11.</em>
-            <br>Powered by mxdyeah.
-            <br>Copyright&nbsp;©&nbsp;2021-2024 mxd Team.
+            <br>Powered by swh123.
+            <br>Copyright&nbsp;©&nbsp;2021-2024 swh123.
         </div>
   </footer>
 </html>
