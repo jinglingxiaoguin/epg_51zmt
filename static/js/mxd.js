@@ -8,14 +8,6 @@ function showContent() {
 function toggleContent() {
     var content = document.getElementById("content");
     var toggleBtn = document.getElementById("toggleBtn");
-    
-    if (content.classList.contains("hidden")) {
-        content.classList.remove("hidden");
-        toggleBtn.innerHTML = "点击收起详细内容";
-    } else {
-        content.classList.add("hidden");
-        toggleBtn.innerHTML = "点击显示详细内容";
-    }
 }
 
 window.onload = function() {
@@ -41,14 +33,5 @@ window.onload = function() {
                                                       Y8P                                   `;
     const content = `\n\n版本:V2.1-20240330 \n主页:https://www.mxdyeah.top/ \nGithub:https://github.com/mxdabc/epg`;
     console.info(`%c${title1} %c${title2} %c${content}`, styleTitle1, styleTitle2, styleContent);
-    
-    // 获取当前页面的URL
-    var currentUrl = window.location.href;
-    
-    // 使用正则表达式来匹配https://epg.mxdyeah.top/
-    if (!currentUrl.startsWith('https://epg.mxdyeah.top/')) 
-    {
-      // 如果不匹配，显示一个弹窗
-      alert("因域名备案原因，现迁移域名至https://epg.mxdyeah.top/，该域名将在5月1日停用");
-    }
+
 }
